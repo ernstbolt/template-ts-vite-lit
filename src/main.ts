@@ -1,9 +1,6 @@
 import { html, render } from "lit";
 
-const deps = [
-  import("./app-element"),
-  import("./boilerplate/tailwind-element/tailwind-element"), // preemptively split tailwind because it might become a large chunk
-];
+const deps = [import("./app-element")];
 
 Promise.all(deps).then(() => {
   const root = document.getElementById("root");

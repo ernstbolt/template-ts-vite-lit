@@ -1,10 +1,9 @@
 import type { TemplateResult } from "lit";
-import { html } from "lit";
+import { LitElement, html } from "lit";
 import { customElement } from "lit/decorators.js";
-import { TailwindElement } from "./boilerplate/tailwind-element/tailwind-element";
 
 @customElement("app-element")
-export class AppElement extends TailwindElement {
+export class AppElement extends LitElement {
   connectedCallback(): void {
     super.connectedCallback();
 

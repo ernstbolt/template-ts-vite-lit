@@ -20,7 +20,7 @@ describe("Button Element Testing", () => {
       .find("button")
       .then(button => {
         expect(button.text().trim()).to.equal(
-          "Welcome to Vite with Lit & Tailwind (x3)"
+          "Welcome to Vite with Lit & Husky & Linting (x3)"
         );
       });
   });

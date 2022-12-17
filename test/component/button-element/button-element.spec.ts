@@ -31,7 +31,7 @@ describe("Button Element", async () => {
     const element = document.body.querySelector("button-element");
     const text = element?.shadowRoot?.innerHTML;
 
-    expect(text).toContain("Welcome to Vite with Lit & Tailwind");
+    expect(text).toContain("Welcome to Vite with Lit & Husky & Linting");
   });
 
   it("increments count when clicked", async () => {
